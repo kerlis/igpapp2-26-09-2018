@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/google-services.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sistemasfireg/igp/org/sismosperu/AutoFitGridLayoutManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sistemasfireg/igp/org/sismosperu/DataModel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sistemasfireg/igp/org/sismosperu/RecyclerViewAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/gradient_boton2.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-small/ic_access_time_white_24dp.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-small/ic_audiotrack_white_24dp.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-small/ic_favorite_white_24dp.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-small/nav_item_color_state.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/boton_menulogodetalle.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/circuloazul.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/header_menu.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/opcionesbackground.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/bordes.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/facebookicon.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/glosario_icono.PNG" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/googlegroupicon.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/iconoreloj.PNG" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/instagramicon.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/linkedinicon.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/notificacion_icono.PNG" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/peru_icono.PNG" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/salir_icono.PNG" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/sismo_icono.PNG" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/sismograma_icono.PNG" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/social.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/twittericon.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/youtubeicon.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout-small/recycler_view_item.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_main.xml" charset="UTF-8" />
+    <file url="PROJECT" charset="ISO-8859-1" />
+  </component>
+</project>
