@@ -31,6 +31,9 @@
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/youtubeicon.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout-small/recycler_view_item.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_main.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/raw/IMG_SISMOS1.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/raw/SISMOS_IGP2.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/raw/key.jks" charset="UTF-8" />
     <file url="PROJECT" charset="ISO-8859-1" />
   </component>
 </project>
