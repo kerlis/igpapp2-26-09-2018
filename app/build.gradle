@@ -16,7 +16,7 @@ android {
         applicationId "sistemasfireg.igp.org.sismosperu"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 21
+        versionCode 23
         versionName '45'
         multiDexEnabled true
         signingConfig signingConfigs.config

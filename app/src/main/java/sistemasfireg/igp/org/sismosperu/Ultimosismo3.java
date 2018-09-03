@@ -127,6 +127,9 @@ public class Ultimosismo3 extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         onNewIntent(getIntent());
 
+
+
+
         Context context = this;
             String Message3 = "0";
             String file_name = "valorcero";
@@ -143,6 +146,45 @@ public class Ultimosismo3 extends FragmentActivity implements OnMapReadyCallback
 
         ShortcutBadger.applyCount(context, 0); //for 1.1.4+
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        String file2 = "datos_ordences";
+        try {
+            FileInputStream fileIn = openFileInput(file2);
+            InputStreamReader InputRead= new InputStreamReader(fileIn);
+            char[] inputBuffer= new char[READ_BLOCK_SIZE];
+            int charRead;
+            charRead=InputRead.read(inputBuffer);
+            String readstring=String.copyValueOf(inputBuffer,0,charRead);
+            k +=readstring;
+            InputRead.close();
+           //  Toast.makeText(getBaseContext(),"data : " + k,Toast.LENGTH_SHORT).show();
+            StringTokenizer st = new StringTokenizer(k.toString(), ",");
+            String ajustes = st.nextToken();
+            tipo = st.nextToken();
+
+            Log.d(TAG, "valor: json: " + k);
+
+
+            //Toast.makeText(getBaseContext(),"data 2 : " + tipo,Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+
+      //  Toast.makeText(Ultimosismo3.this, k, Toast.LENGTH_LONG).show();
 
         //int badgeCount = 1;
       //  ShortcutBadger.applyCount(context, badgeCount); //for 1.1.4+

@@ -70,9 +70,9 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
 
     @Override
     public void onTokenRefresh() {
-       FirebaseMessaging.getInstance().subscribeToTopic("SISMOS");
+       //FirebaseMessaging.getInstance().subscribeToTopic("SISMOS");
 
-        //FirebaseMessaging.getInstance().subscribeToTopic("PRUEBASIS");
+      //  FirebaseMessaging.getInstance().subscribeToTopic("PRUEBASIS");
 
 
         //FirebaseMessaging.getInstance().subscribeToTopic("Sismosdos");
@@ -83,20 +83,32 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
         contador();
     }
     private void registerToken(String token) {
+
+
         OkHttpClient client = new OkHttpClient();
         RequestBody body = new FormBody.Builder()
                 .add("Token",token)
                 .build();
-        Request request = new Request.Builder()
-                //  .url("http://arteypixel.com/envio_notificaciones/register.php")
-             .url("http://intranet.igp.gob.pe/MI0laYWBo4/")
+                Request request = new Request.Builder()
+                 .url("http://intranet.igp.gob.pe/AnMI0laYWBo4/index.php?Token="+token)
+//                        .url("http://intranet.igp.gob.pe/test_erlis/test.php?Token="+token)
+
+
+
+
+             //.url("http://intranet.igp.gob.pe/MI0laYWBo4/")
 
 
 
         //http://intranet.igp.gob.pe/MI0laYWBo4/
                 .post(body)
                 .build();
-     //  consulta("http://intranet.igp.gob.pe/MI0laYWBo4/");
+
+      //  consulta("http://arteypixel.com/envio_notificaciones/register.php?Token="+token);
+//        consulta("http://intranet.igp.gob.pe/test_erlis/test.php?Token="+token);
+
+
+       consulta("http://intranet.igp.gob.pe/AnMI0laYWBo4/index.php?Token="+token);
 
 
         try {
@@ -130,10 +142,12 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
 
     }
 
-/*
+
     public void consulta(String urlString)  {
                 try {
-                  URL url = new URL("http://intranet.igp.gob.pe/MI0laYWBo4/");
+//                    URL url = new URL("http://arteypixel.com/envio_notificaciones/register.php");
+
+                  URL url = new URL(urlString);
                   HttpURLConnection urlConnection = null;
                   BufferedReader bufferedReader = null;
                   urlConnection = (HttpURLConnection) url.openConnection();
@@ -149,17 +163,20 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
          //   }
       //  });
     }
-*/
+/**/
 
 
-/*  consulta e insercion de base de datos en la memoria interna
+/*  consulta e insercion de base de datos en la memoria interna */
     private void ver2(String dato) {
         String Message5 = dato;
         String file_namex = "datos_ordences";
         try {
             FileOutputStream fileOutputStream = openFileOutput(file_namex, MODE_PRIVATE);
             fileOutputStream.write(Message5.getBytes());
-          //  fileOutputStream.write(Message7.getBytes());
+            FirebaseMessaging.getInstance().subscribeToTopic(Message5);
+
+
+            //  fileOutputStream.write(Message7.getBytes());
             fileOutputStream.close();
             //  Toast.makeText(getApplicationContext(), "Configurado", Toast.LENGTH_LONG).show();
         } catch (FileNotFoundException e) {
@@ -168,7 +185,7 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
             e.printStackTrace();
         }
     }
- */
+
 
     private void ver() {
         String Message3 = elvalor + ",";
