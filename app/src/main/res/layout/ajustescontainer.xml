@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ToggleButton
+        android:id="@+id/switchToggle"
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="32dp"
+         android:textOff=""
+        android:textOn="" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/switchToggle"
+        android:layout_alignStart="@+id/switchToggle"
+        android:layout_below="@+id/switchToggle"
+        android:layout_marginTop="52dp"
+        android:text="Switch" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="42dp"
+        android:text="ToggleButton" />
+
+    <Button android:id="@+id/generarnuevaid"
+        android:text="generar nuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button android:id="@+id/vercapturado2"
+        android:layout_below="@+id/generarnuevaid"
+        android:text="ver valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

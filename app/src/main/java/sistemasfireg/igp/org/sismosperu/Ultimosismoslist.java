@@ -200,7 +200,14 @@ public class Ultimosismoslist extends Activity {
         lv.setAdapter(adapter);
 
 
-        /*
+
+
+
+
+        mk= (Button) findViewById(R.id.button);
+
+        TextView Button = (TextView) findViewById(R.id.txtLostpassword);
+
         Button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -210,13 +217,6 @@ public class Ultimosismoslist extends Activity {
                 startActivity(intent);
             }
         });
-        */
-
-        mk= (Button) findViewById(R.id.button);
-
-        TextView Button = (TextView) findViewById(R.id.txtLostpassword);
-
-
 
         Display display = ((WindowManager) this.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         mWidthScreen = display.getWidth();

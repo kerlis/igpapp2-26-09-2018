@@ -35,7 +35,7 @@ public class SplashScreen extends Activity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent7 = new Intent(SplashScreen.this,Ultimosismo3.class);
+                    Intent intent7 = new Intent(SplashScreen.this,Ajustesnotificaciones.class);
                     startActivity(intent7);
                 }
             }

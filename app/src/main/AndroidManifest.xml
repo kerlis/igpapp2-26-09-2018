@@ -110,6 +110,13 @@
             android:name="sistemasfireg.igp.org.sismosperu.DetailActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name="sistemasfireg.igp.org.sismosperu.Ajustesnotificaciones"
+            android:screenOrientation="portrait" />
+
+
+
+
         <receiver
             android:name="sistemasfireg.igp.org.sismosperu.InicioReceiver"
             android:enabled="true"
