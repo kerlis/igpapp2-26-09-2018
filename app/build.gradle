@@ -70,10 +70,11 @@ dependencies {
     compile 'com.android.support:support-v4:25.2.0'
     compile 'com.firebaseui:firebase-ui:1.1.1'
     compile 'com.firebase:firebase-client-android:2.3.1+'
-    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+  //  compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.google.maps.android:android-maps-utils:0.4+'
     testCompile 'junit:junit:4.12'
 
+    compile 'com.squareup.okhttp3:okhttp:3.11.0'
 
     //compile 'com.google.android.material:material:1.0.0-beta01'
 

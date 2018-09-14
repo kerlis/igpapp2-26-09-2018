@@ -37,6 +37,7 @@
     <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
 
 
+    <uses-permission android:name="android.permission.PERMISSION_GRANTED" />
 
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -113,6 +114,12 @@
         <activity
             android:name="sistemasfireg.igp.org.sismosperu.Ajustesnotificaciones"
             android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="sistemasfireg.igp.org.sismosperu.Localizacion"
+            android:screenOrientation="portrait" />
+
 
 
 

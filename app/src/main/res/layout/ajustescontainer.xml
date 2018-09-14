@@ -48,4 +48,26 @@
         android:text="ver valor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+
+    <Button android:id="@+id/vercapturado3"
+        android:layout_below="@+id/vercapturado2"
+        android:text="enviar valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/vernuevotoken"
+        android:layout_below="@+id/vercapturado2"
+        android:text="ver token instalado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/obtenerdireccion"
+        android:layout_below="@+id/vernuevotoken"
+        android:text="ver direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
 </RelativeLayout>
