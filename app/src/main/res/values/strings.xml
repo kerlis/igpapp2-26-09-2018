@@ -239,7 +239,13 @@
     <string name="sos">S.O.S</string>
 
 
-    reportar
+
+    <string name="si">SI</string>
+    <string name="no">NO</string>
+    <string name="m2">M2</string>
+    <string name="m3">M3</string>
+    <string name="m4">M4</string>
+    <string name="m5">M5</string>
 
 
     <string-array name="navigation_drawer_items_array">
