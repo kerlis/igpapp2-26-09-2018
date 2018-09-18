@@ -3,6 +3,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="sistemasfireg.igp.org.sismosperu">
+    <uses-permission android:name="com.htc.launcher.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="com.htc.launcher.permission.MODIFY_AUDIO_SETTINGS"/>
 
     <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
     <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
@@ -121,6 +123,12 @@
             android:screenOrientation="portrait" />
 
 
+        <activity
+            android:name="sistemasfireg.igp.org.sismosperu.Getlocationandmore"
+            android:screenOrientation="portrait" />
+
+
+
 
 
 
@@ -163,11 +171,26 @@
 
 
 
+
+
+
+
+
+        <service android:name="sistemasfireg.igp.org.sismosperu.FirebaseNotificationservice4">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <!--
         <service android:name="sistemasfireg.igp.org.sismosperu.FirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+        -->
+
 
    <!--
 

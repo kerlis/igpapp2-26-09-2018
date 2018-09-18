@@ -180,7 +180,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <Button android:id="@+id/obtenerlocalizacionuno"
+        android:layout_below="@+id/obtenerdireccion"
+        android:text="get location lan long"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
-
+    <Button android:id="@+id/ckeckstatusgps"
+        android:layout_below="@+id/obtenerlocalizacionuno"
+        android:text="check status location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
