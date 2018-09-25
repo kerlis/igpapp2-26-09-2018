@@ -27,11 +27,9 @@ import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
 import me.leolin.shortcutbadger.ShortcutBadger;
 
 public class DetailActivity extends FragmentActivity implements OnMapReadyCallback {
@@ -98,7 +96,7 @@ public class DetailActivity extends FragmentActivity implements OnMapReadyCallba
             Toast.makeText(DetailActivity.this, "Su Equipo ha Bloquedo la Conexión", Toast.LENGTH_LONG).show();
         }
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         sMapFragment = SupportMapFragment.newInstance();
         FragmentManager sFm = getSupportFragmentManager();

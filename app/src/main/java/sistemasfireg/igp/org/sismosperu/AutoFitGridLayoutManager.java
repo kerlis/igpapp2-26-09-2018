@@ -1,24 +1,15 @@
 package sistemasfireg.igp.org.sismosperu;
-
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
-/**
- * Created by anupamchugh on 05/03/17.
- */
-
 public class AutoFitGridLayoutManager extends GridLayoutManager {
-
     private int columnWidth;
     private boolean columnWidthChanged = true;
-
     public AutoFitGridLayoutManager(Context context, int columnWidth) {
         super(context, 1);
 
         setColumnWidth(columnWidth);
     }
-
 
     public void setColumnWidth(int newColumnWidth) {
         if (newColumnWidth > 0 && newColumnWidth != columnWidth) {

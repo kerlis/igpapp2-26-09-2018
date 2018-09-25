@@ -20,6 +20,7 @@ public class Getlocationandmore extends Activity {
     GPSTracker gps;
     Uri ringtone;
 
+    /*
     String longitudcmp1 = "-12.8120534";
     String longitudcmp2 = "-76.5416381";
 
@@ -72,11 +73,7 @@ public class Getlocationandmore extends Activity {
 
 
    public void pickRingtone() {
-       /*   Intent intent=new Intent(RingtoneManager.ACTION_RINGTONE_PICKER);
-        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_EXISTING_URI, ringtone);
-        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_DEFAULT_URI, ringtone);
-        startActivityForResult(intent , 1);
-       */
+
         // TODO Auto-generated method.   stub
         Intent intent = new Intent(RingtoneManager.ACTION_RINGTONE_PICKER);
         intent.putExtra(RingtoneManager.EXTRA_RINGTONE_TYPE,
@@ -154,5 +151,7 @@ public class Getlocationandmore extends Activity {
             Log.e("tag", e.getMessage());
         }
     }
+
+    */
 
 }

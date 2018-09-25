@@ -24,7 +24,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import com.google.android.gms.iid.InstanceID;
+//import com.google.android.gms.iid.InstanceID;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;

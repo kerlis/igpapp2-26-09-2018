@@ -71,7 +71,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:supportsRtl">
+         tools:replace="android:supportsRtl">
+
+        <meta-data
+            tools:replace="android:value"
+            android:name="android.support.VERSION"
+            android:value="26.0.0" />
         <activity
             android:name="sistemasfireg.igp.org.sismosperu.SplashScreen"
             android:label="@string/app_name">
@@ -89,9 +94,19 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-        <meta-data
+
+
+
+
+
+   <!--     <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyBn447xeNvDqgwfix69ROb-otRg6e4xWsI" />
+-->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyChRE4B12A8MFwNc4ftdxivF5hXi-e7b3o" />
+
 
         <receiver
             android:name="sistemasfireg.igp.org.sismosperu.InicioReceiver"
@@ -173,6 +188,7 @@
 
 
 
+        <!--
 
 
 
@@ -182,14 +198,13 @@
             </intent-filter>
         </service>
 
-
-        <!--
+   -->
         <service android:name="sistemasfireg.igp.org.sismosperu.FirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        -->
+
 
 
    <!--

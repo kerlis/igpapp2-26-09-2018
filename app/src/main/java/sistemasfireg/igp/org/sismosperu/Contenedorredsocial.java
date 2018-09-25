@@ -1,16 +1,4 @@
-/**package sistemasfireg.igp.org.sismosperu;
-
-
- * Created by usuario on 16/05/2018.
-
-public class Contenedorredsocial {
-}
-
- */
-
-
 package sistemasfireg.igp.org.sismosperu;
-//package com.example.usuario.volcanesperu;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -44,13 +32,9 @@ public class Contenedorredsocial extends FragmentActivity implements ActivityCom
     RelativeLayout convenciones;
     TextView titulovolcanlabel;
     Button mk;
-
     WebView webView;
-
     String valor;
     String valor2;
-
-
     ImageView sliderz;
     private CharSequence mTitle;
     private DrawerLayout mDrawerLayout;
@@ -59,7 +43,6 @@ public class Contenedorredsocial extends FragmentActivity implements ActivityCom
     android.support.v7.app.ActionBarDrawerToggle mDrawerToggle;
     private RelativeLayout mDrawerBlock;
     Toolbar toolbar;
-
     RelativeLayout blocke1a;
     RelativeLayout blocke2a;
     RelativeLayout blocke3a;
@@ -67,13 +50,9 @@ public class Contenedorredsocial extends FragmentActivity implements ActivityCom
     RelativeLayout blocke5a;
     RelativeLayout blocke6a;
     RelativeLayout blocke9;
-
     TextView nombreredsocial;
     private ProgressBar spinner;
     String ShowOrHideWebViewInitialUse = "show";
-
-
-
     @SuppressLint({"WrongViewCast", "SetJavaScriptEnabled"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {

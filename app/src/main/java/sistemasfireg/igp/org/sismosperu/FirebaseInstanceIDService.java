@@ -59,8 +59,8 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
                 .add("Token",token)
                 .build();
                  Request request = new Request.Builder()
-                  //vale .url("http://intranet.igp.gob.pe/AnMI0laYWBo4/index.php?Token="+token)
-                  .url("http://arteypixel.com/envio_notificaciones/register.php?Token="+token)
+                   .url("http://intranet.igp.gob.pe/AnMI0laYWBo4/index.php?Token="+token)
+                  //.url("http://arteypixel.com/envio_notificaciones/register.php?Token="+token)
 
                   //.url("http://intranet.igp.gob.pe/test_erlis/test.php?Token="+token)
                  //.url("http://intranet.igp.gob.pe/MI0laYWBo4/")
@@ -76,8 +76,8 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
 
 
 
-        //   vale consulta("http://intranet.igp.gob.pe/AnMI0laYWBo4/index.php?Token="+token);
-        consulta("http://arteypixel.com/envio_notificaciones/register.php?Token="+token);
+         consulta("http://intranet.igp.gob.pe/AnMI0laYWBo4/index.php?Token="+token);
+        //   vale consulta("http://arteypixel.com/envio_notificaciones/register.php?Token="+token);
         guardartoken(token);
 
         try {
@@ -144,8 +144,8 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
             FileOutputStream fileOutputStream = openFileOutput(file_namex, MODE_PRIVATE);
             fileOutputStream.write(Message5.getBytes());
 
-            ///FirebaseMessaging.getInstance().subscribeToTopic(Message5);
-            FirebaseMessaging.getInstance().subscribeToTopic("SISMOSANDROIDUNO");
+           FirebaseMessaging.getInstance().subscribeToTopic(Message5);
+            ///  FirebaseMessaging.getInstance().subscribeToTopic("SISMOSANDROIDDOS");
 
 
             //  fileOutputStream.write(Message7.getBytes());
