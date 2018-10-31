@@ -70,6 +70,7 @@ public class FirebaseMessagingService  extends com.google.firebase.messaging.Fir
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
 
+
         //ShortcutBadger.applyCount(FirebaseMessagingService.this, 1);
 
         //subscrito a tema sismos

@@ -1,5 +1,8 @@
 package sistemasfireg.igp.org.sismosperu;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.util.Log;
 import android.widget.Toast;
 import com.google.firebase.iid.FirebaseInstanceId;
@@ -46,13 +49,36 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
     @Override
     public void onTokenRefresh() {
         String token = FirebaseInstanceId.getInstance().getToken();
-
-
-
         registerToken(token);
         ver();
         contador();
+        createNotificationChannel();
+
     }
+
+    private void createNotificationChannel() {
+
+        String channelId = "some_channel_id";
+        CharSequence channelName = "Some Channel";
+
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.channel_name);
+            String description = getString(R.string.channel_description);
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel(channelId, name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
+
+
+
     private void registerToken(String token) {
         OkHttpClient client = new OkHttpClient();
         RequestBody body = new FormBody.Builder()
@@ -144,7 +170,7 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
             FileOutputStream fileOutputStream = openFileOutput(file_namex, MODE_PRIVATE);
             fileOutputStream.write(Message5.getBytes());
 
-           FirebaseMessaging.getInstance().subscribeToTopic(Message5);
+            FirebaseMessaging.getInstance().subscribeToTopic(Message5);
             ///  FirebaseMessaging.getInstance().subscribeToTopic("SISMOSANDROIDDOS");
 
 
@@ -166,6 +192,8 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
         try {
             FileOutputStream fileOutputStream = openFileOutput(file_namex, MODE_PRIVATE);
             fileOutputStream.write(Message5.getBytes());
+
+
           //  FirebaseMessaging.getInstance().subscribeToTopic(Message5);
 
 
@@ -214,4 +242,6 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
             e.printStackTrace();
         }
     }
+
+
 }

@@ -1,8 +1,17 @@
 <resources>
     <string name="app_name">Sismos Perú</string>
+    <string name="profundidadkm">Profundidades<u>Profundidades km</u></string>
 
 
-     <string name="profundidadkm">Profundidades<u>Profundidades km</u></string>
+    <string name="default_notification_channel_id">default_channel_id</string>
+    <string name="default_notification_channel_name">default_channel_name</string>
+    <string name="default_notification_channel_id_lahar">default_channel_id_lahar</string>
+    <string name="default_notification_channel_name_lahar">default_channel_name_lahar</string>
+    <string name="channel_description_lahar" translatable="false">fcm_default_channel_lahar</string>
+
+
+    <string name="channel_name" translatable="false">fcm_default_channel</string>
+    <string name="channel_description" translatable="false">fcm_default_channel</string>
 
 
 <string name="menu_settings">Settings</string>
